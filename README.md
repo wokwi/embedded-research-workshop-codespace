@@ -1,2 +1,2 @@
-# https-github.com-wokwi-embedded-research-workshop-codespace
+# embedded-research-workshop-codespace
 GitHub codespace for Wokwi for Embedded System Security Research workshop
