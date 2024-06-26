@@ -1,4 +1,0 @@
-[wokwi]
-firmware='rainbow/build/esp32.esp32.esp32c3/rainbow.ino.bin'
-elf='rainbow/build/esp32.esp32.esp32c3/rainbow.ino.elf'
-gdbServerPort=3333

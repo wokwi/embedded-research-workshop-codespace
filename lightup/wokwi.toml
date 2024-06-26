@@ -1,0 +1,4 @@
+[wokwi]
+firmware='build/esp32.esp32.esp32c3/lightup.ino.bin'
+elf='build/esp32.esp32.esp32c3/lightup.ino.elf'
+gdbServerPort=3333
