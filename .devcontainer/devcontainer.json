@@ -14,7 +14,8 @@
 			"ms-vscode.cpptools",
 			"ms-vscode.cpptools-extension-pack",
 			"espressif.esp-idf-extension",
-			"Wokwi.wokwi-vscode"
+			"Wokwi.wokwi-vscode",
+			"ms-vscode.hexeditor"
 		]
 	  }
 	},
