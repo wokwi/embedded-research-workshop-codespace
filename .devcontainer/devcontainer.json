@@ -1,0 +1,21 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.183.0/containers/ubuntu
+{
+	"name": "",
+	"build": {
+	  "dockerfile": "Dockerfile"
+	},
+	"customizations": {
+	  "vscode": {
+		"settings": {
+		  "terminal.integrated.defaultProfile.linux": "bash"
+		},
+		"extensions": [
+			"ms-vscode.cpptools",
+			"ms-vscode.cpptools-extension-pack",
+			"espressif.esp-idf-extension",
+			"Wokwi.wokwi-vscode"
+		]
+	  }
+	},
+  }
