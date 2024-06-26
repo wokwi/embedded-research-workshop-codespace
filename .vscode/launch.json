@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Wokwi GDB",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/rainbow/build/esp32.esp32.esp32c3/rainbow.ino.elf",
+        "cwd": "${workspaceFolder}",
+        "MIMode": "gdb",
+        "miDebuggerPath": "riscv32-esp-elf-gdb",
+        "miDebuggerServerAddress": "localhost:3333"
+      }
+    ]
+  }
