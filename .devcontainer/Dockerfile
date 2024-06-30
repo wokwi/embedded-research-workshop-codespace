@@ -1,16 +1,9 @@
 ARG VARIANT=ubuntu-22.04
 FROM mcr.microsoft.com/vscode/devcontainers/base:${VARIANT}
 
-# update dependencies
-RUN apt update
-RUN apt upgrade -y
-
-# install xfce desktop
-RUN apt install -y xfce4 xfce4-goodies
-
 # See: https://askubuntu.com/a/1396918
 RUN echo "wireshark-common wireshark-common/install-setuid boolean false" | sudo debconf-set-selections
-RUN sudo apt-get update && sudo apt-get install -y wireshark tshark pulseview
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y wireshark tshark pulseview xfce4
 
 
 # Install riscv32-esp-elf-gdb and add to path
@@ -19,4 +12,4 @@ RUN cd /usr/local && curl -L https://github.com/espressif/binutils-gdb/releases/
 # Install Espressif SVD files
 RUN git clone --depth=1 https://github.com/espressif/svd /opt/esp-svd
 
-COPY --chown=vscode Desktop/* /home/gitpod/Desktop/
+COPY --chown=vscode Desktop/* /home/vscode/Desktop/
