@@ -3,20 +3,29 @@
 {
 	"name": "",
 	"build": {
-	  "dockerfile": "Dockerfile"
+		"dockerfile": "Dockerfile"
 	},
 	"customizations": {
-	  "vscode": {
-		"settings": {
-		  "terminal.integrated.defaultProfile.linux": "bash"
-		},
-		"extensions": [
-			"ms-vscode.cpptools",
-			"ms-vscode.cpptools-extension-pack",
-			"espressif.esp-idf-extension",
-			"Wokwi.wokwi-vscode",
-			"ms-vscode.hexeditor"
-		]
-	  }
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash"
+			},
+			"extensions": [
+				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-extension-pack",
+				"espressif.esp-idf-extension",
+				"Wokwi.wokwi-vscode",
+				"ms-vscode.hexeditor"
+			]
+		}
 	},
-  }
+	"features": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {}
+	},
+	"forwardPorts": [6080],
+	"portsAttributes": {
+	  "6080": {
+		"label": "desktop"
+	  }
+	}
+}

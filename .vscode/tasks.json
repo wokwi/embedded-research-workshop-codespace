@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open VNC",
+            "command": "${input:openVNC}",
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "openVNC",
+            "type": "command",
+            "command": "simpleBrowser.show",
+            "args": [
+                "http://localhost:6080"
+            ]
+        }
+    ]
+}
