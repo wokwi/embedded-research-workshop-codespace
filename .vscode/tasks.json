@@ -4,7 +4,10 @@
         {
             "label": "Open VNC",
             "command": "${input:openVNC}",
-            "problemMatcher": []
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
         }
     ],
     "inputs": [
